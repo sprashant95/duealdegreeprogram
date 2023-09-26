@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="59dp"
+        android:text="Contact Us"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/toemail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/toemail"
+        android:layout_width="320dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="37dp"
+        android:ems="10"
+        android:hint="Enter To Email ID"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/subemail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/subemail"
+        android:layout_width="320dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="37dp"
+        android:ems="10"
+        android:hint="Enter Subject"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/bodyemail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/bodyemail"
+        android:layout_width="320dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="52dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Enter Your Message"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginBottom="266dp"
+        android:text="SUBMIT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="325dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
