@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:icon="@drawable/tolly"
+        android:id="@+id/tollywood"
+        android:title="Tollywood"/>
+    <item
+        android:icon="@drawable/bolly"
+        android:id="@+id/bollywood"
+        android:title="Bollywood"/>
+    <item
+        android:icon="@drawable/holly"
+        android:id="@+id/hollywood"
+        android:title="Hollywood"/>
+</menu>
